@@ -14,9 +14,9 @@
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
-                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                  <Component id="botonAceptar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="195" max="-2" attributes="0"/>
-                  <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                  <Component id="botonCancelar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -28,8 +28,8 @@
                   <Component id="jColorChooser1" min="-2" pref="351" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="botonAceptar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="botonCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="24" max="32767" attributes="0"/>
               </Group>
@@ -39,20 +39,20 @@
       <SubComponents>
         <Component class="javax.swing.JColorChooser" name="jColorChooser1">
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="botonAceptar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Aceptar"/>
           </Properties>
           <Events>
-            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton2MousePressed"/>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonAceptarMousePressed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="botonCancelar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cancelar"/>
           </Properties>
           <Events>
-            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton3MousePressed"/>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonCancelarMousePressed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -86,6 +86,8 @@
               <Component id="botonCirculos" min="-2" pref="100" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="botonCuadrados" min="-2" pref="100" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="botonTriangulo" min="-2" pref="100" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
               <Component id="botonColor" min="-2" pref="80" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -100,6 +102,7 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="botonCirculos" alignment="3" pref="64" max="32767" attributes="0"/>
                       <Component id="botonCuadrados" alignment="3" pref="64" max="32767" attributes="0"/>
+                      <Component id="botonTriangulo" alignment="3" pref="64" max="32767" attributes="0"/>
                   </Group>
                   <Component id="botonColor" pref="64" max="32767" attributes="0"/>
               </Group>
@@ -143,11 +146,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Circulos"/>
       </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonCirculosMousePressed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="botonCuadrados">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cuadrados"/>
       </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonCuadradosMousePressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="botonTriangulo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Triangulo"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonTrianguloMousePressed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

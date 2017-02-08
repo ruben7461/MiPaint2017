@@ -28,6 +28,7 @@ public class VentanaPaint extends javax.swing.JFrame {
     //creo un objeto de un circulo
     Circulo miCirculo;
     Cuadrado miCuadrado;
+    Triangulo miTriangulo;
     
     Graphics2D bufferGraphics,buffer2Graphics,lienzographics = null;
     
@@ -249,6 +250,11 @@ public class VentanaPaint extends javax.swing.JFrame {
         miCuadrado.dibujate(buffer2Graphics,evt.getX());
         break;
         
+        
+         case 2: miTriangulo =new Triangulo(evt.getX(), evt.getY(), 1, colorSeleccionado,true);
+        miCuadrado.dibujate(buffer2Graphics,evt.getX());
+        break;
+        
     }
         
         repaint(0,0,1,1);
@@ -280,7 +286,11 @@ public class VentanaPaint extends javax.swing.JFrame {
                   
                     miCuadrado.dibujate(bufferGraphics, evt.getX());
                 break;
-        
+                
+                case 2: //dibujo del triangulo
+                  
+                    miTriangulo.dibujate(bufferGraphics, evt.getX());
+                break;
           }
      
           lienzographics.drawImage(buffer, 0, 0, null);
@@ -302,6 +312,10 @@ public class VentanaPaint extends javax.swing.JFrame {
         miCuadrado.dibujate(buffer2Graphics,evt.getX());
         break;
         
+        
+        case 2: 
+        miTriangulo.dibujate(buffer2Graphics,evt.getX());
+        break;
     }
         
         
@@ -317,7 +331,7 @@ public class VentanaPaint extends javax.swing.JFrame {
     }//GEN-LAST:event_botonAceptarMousePressed
 
     private void botonCancelarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonCancelarMousePressed
-        
+        jDialog1.setVisible(false);
     }//GEN-LAST:event_botonCancelarMousePressed
 
     private void botonCirculosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonCirculosMousePressed
@@ -329,7 +343,7 @@ public class VentanaPaint extends javax.swing.JFrame {
     }//GEN-LAST:event_botonCuadradosMousePressed
 
     private void botonTrianguloMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonTrianguloMousePressed
-      
+      formaSeleccionada = 2;
     }//GEN-LAST:event_botonTrianguloMousePressed
 
     /**

@@ -41,13 +41,12 @@ public class Triangulo extends Polygon{
        
         
         //creamos la formula
-        int mediaBase = (int) (altura / Math.tan(Math.toRadians(60)));
+        int mediaBase = (int) (altura / Math.sin(Math.toRadians(60)));
         
          this.xpoints[1] = _posX + mediaBase;
          this.xpoints[2] = _posX - mediaBase;
          
-      System.out.println(ypoints);
-      System.out.println(xpoints);
+     
      
         this.color = _color;
         this.relleno = _relleno;
@@ -58,7 +57,14 @@ public class Triangulo extends Polygon{
     
  
     
-     public void dibujate(Graphics2D g2, int posX){
+     public void dibujate(Graphics2D g2, int posY){
+        
+         int altura = Math.abs((int) ypoints[0] - posY);
+        this.ypoints[1] = posY + altura;
+        this.ypoints[2] = posY + altura;
+        int mediaBase = (int) (altura / Math.sin(Math.toRadians(60))) ;
+        this.xpoints[1] = this.xpoints[0] + mediaBase;
+        this.xpoints[2] = this.xpoints[0] - mediaBase;
         
         g2.setColor(color);
         

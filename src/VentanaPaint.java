@@ -286,13 +286,13 @@ public class VentanaPaint extends javax.swing.JFrame {
         
         
         case 3: 
-               miPentagono = new Pentagono(evt.getX(), evt.getY(), new int[5], new int[5], 1, colorSeleccionado, true); 
+               miPentagono = new Pentagono(evt.getX(), evt.getY(), new int[5], new int[5], colorSeleccionado, true); 
                
                break; 
 
         
         case 4: 
-               miHexagono = new Hexagono(evt.getX(), evt.getY(), new int[6], new int[6], 1, colorSeleccionado, true); 
+  miHexagono = new Hexagono(evt.getX(), evt.getY(), new int[6], new int[6], colorSeleccionado, true); 
                
                break;      
         

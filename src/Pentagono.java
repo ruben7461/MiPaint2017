@@ -17,9 +17,8 @@ import javafx.scene.transform.Rotate;
 public class Pentagono extends Forma {
     
         
-   public Pentagono (int _posX, int _posY, int [] _puntosX, int [] _puntosY,  Color _color, boolean _relleno){
-        super(_posX, _posY,_puntosX,_puntosY,_color,_relleno,5);
-        numLados = 5;
+   public Pentagono(int _posX, int _posY, Color _color, boolean _relleno){
+        super(_posX, _posY,new int[5],new int[5],_color,_relleno, 5 );
         
         
     }

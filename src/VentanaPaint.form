@@ -95,6 +95,8 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="botonHexagono" min="-2" pref="100" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="botonEstrella" min="-2" pref="100" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -117,7 +119,10 @@
                           <Component id="botonPentagono" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="botonHexagono" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="botonHexagono" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="botonEstrella" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <Component id="botonColor" min="-2" pref="64" max="-2" attributes="0"/>
               </Group>
@@ -195,6 +200,14 @@
       </Properties>
       <Events>
         <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonHexagonoMousePressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="botonEstrella">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Estrella"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonEstrellaMousePressed"/>
       </Events>
     </Component>
   </SubComponents>
